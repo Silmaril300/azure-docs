@@ -64,7 +64,7 @@ The Compute nodes provide the computational power.
 
 In dedicated SQL pool, distributions map to Compute nodes for processing. As you pay for more compute resources, pool remaps the distributions to the available Compute nodes. The number of compute nodes ranges from 1 to 60, and is determined by the service level for the dedicated SQL pool. Each Compute node has a node ID that is visible in system views. You can see the Compute node ID by looking for the node_id column in system views whose names begin with sys.pdw_nodes. For a list of these system views, see [Synapse SQL system views](/sql/relational-databases/system-catalog-views/sql-data-warehouse-and-parallel-data-warehouse-catalog-views?view=azure-sqldw-latest&preserve-view=true).
 
-In serverless SQL pool, each Compute node is assigned task and set of files to execute task on. Task is distributed query execution unit, which is actually part of query user submitted. Automatic scaling is in effect to make sure enough Compute nodes are utilized to execute user query.
+In serverless SQL pool, each Compute node is assigned a task and a set of files to execute the task on. A task is a distributed query execution unit, which is actually part of a query the user submitted. Automatic scaling is in effect to make sure enough Compute nodes are utilized to execute the user query.
 
 ## Data Movement Service
 
